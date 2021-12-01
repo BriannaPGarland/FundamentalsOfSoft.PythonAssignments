@@ -1,0 +1,23 @@
+'''
+Brianna Garland 
+Fundamentals of Software Engineering 
+Homework 1
+Create and submit a Python script that uses at least one variable along with the input() and print() functions described in 
+section 2.10 to read the user's first name and last name, and then print a string of the format "Hello <firstName> <lastName>
+'''
+
+#def printHello():
+#   firstName = input("Please enter your first name")
+#   lastName = input("Please enter your last name")
+#   print("Hello "+firstName+" "+lastName+"!!")
+
+def printHello():
+    print("------------------------------------------------------------")
+    #This takes in the string of the persons entire name and splits it at the space into two variables
+    firstName, lastName= input("Please enter your first name \n"), input("Please enter your last name \n")
+    print("\nHello "+firstName+" "+lastName+"!!")
+    print("------------------------------------------------------------")
+try:
+    printHello()
+except:
+    print("Sorry there has been an error please run the program again")
